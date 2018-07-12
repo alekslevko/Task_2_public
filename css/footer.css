@@ -107,11 +107,10 @@
 
 
 
-@media screen and (max-width: 1173px){
+@media screen and (max-width: 1250px){
     .footer-container{
         justify-content: space-around;
-        padding-top: 20px;
-        padding-bottom: 0;
+        padding: 20px 15px 0 15px;
     }
     .footer__section{
         min-width: 100%;

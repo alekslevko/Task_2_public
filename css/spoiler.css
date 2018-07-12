@@ -1,5 +1,5 @@
 
-.spoiler ul {
+.spoiler .spoiler-list {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -8,14 +8,14 @@
     padding: 0;  
     margin: 0; 
 }
-.spoiler li {
+.spoiler .spoiler-item {
     padding:0;
     margin: 0 0 7px 0;
 }
 .spoiler [type=radio], .spoiler [type=checkbox] {
     display:none;
 }
-.spoiler .label {
+.spoiler .spoiler-title {
     padding-left: 20px;
     display:block;
     font-size:16px;
@@ -27,17 +27,17 @@
     cursor:pointer;
     border-radius: 5px;
 }
-.spoiler [type=checkbox]:checked ~ .label{
+.spoiler [type=checkbox]:checked ~ .spoiler-title{
     border-bottom-left-radius: 0;
     background: #3b3e4a;
     color:#FFF;
 }
-.spoiler [type=checkbox]:checked ~ .label:hover{
+.spoiler [type=checkbox]:checked ~ .spoiler-title:hover{
     border-bottom-left-radius: 0;
     background: white ;
     color:#3b3e4a;
 }
-.spoiler ul li .label:hover, .spoiler [type=radio]:checked ~ label {
+.spoiler .spoiler-list .spoiler-item .spoiler-title:hover, .spoiler [type=radio]:checked ~ label {
     background: #3b3e4a;
     color:#FFF;
 }
@@ -49,26 +49,26 @@
     padding:0 10px;
     overflow:hidden;
 }
-.vertical ul li {
+.vertical .spoiler-list .spoiler-item {
     overflow:hidden;
 }
-.vertical ul li .label{
+.vertical .spoiler-list .spoiler-item .spoiler-title{
     max-width: 570px;
     min-height: 40px;
     display: flex;
     flex-direction: row;
     justify-content: stretch;
 }
-.vertical ul li .label label{
+.vertical .spoiler-list .spoiler-item .spoiler-title label{
     position: relative;
     top: 10px;
     width: 100%;
     margin: auto;
 }
-.vertical ul li .spoiler-content {
+.vertical .spoiler-list .spoiler-item .spoiler-content {
     height:0;
 }
-.vertical [type=checkbox]:checked ~ .label ~ .spoiler-content {
+.vertical [type=checkbox]:checked ~ .spoiler-title ~ .spoiler-content {
     min-height: 78px;
     display: flex;
     flex-direction: column;
@@ -80,7 +80,7 @@
     border-bottom-right-radius: 5px;
     max-width: 570px;   
 }
-li > input + .label > label:after{
+.spoiler-item > .input + .spoiler-title > .label:after{
     position: relative;
     bottom: 10px;
     padding-top: 5px;
@@ -96,7 +96,7 @@ li > input + .label > label:after{
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
 }
-li > input:checked + .label > label:after{
+.spoiler-item > .input:checked + .spoiler-title > .label:after{
     position: relative;
     bottom: 10px;
     padding-top: 5px;

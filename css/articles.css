@@ -33,17 +33,19 @@
 .button-more_big-margin-top{
     margin-top: 20px;
 }
-@media screen and (max-width: 1173px){
+@media screen and (max-width: 1250px){
     .article-container{
+        padding-right: 15px;
+        padding-left: 15px;
         justify-content: space-around;
         padding-bottom: 0;
     }
     .article{
         padding-bottom: 40px;
     }
-} 
+}
 @media screen and (max-width: 560px){
-    .article img{
+    .article__image{
         display: none;
     }
     .article{

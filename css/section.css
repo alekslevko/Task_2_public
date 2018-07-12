@@ -69,8 +69,11 @@
 	position: relative;
 	top: 5px;
 }
-@media screen and (max-width: 1173px){
+
+@media screen and (max-width: 1250px){
     .section{
+		padding-right: 15px;
+        padding-left: 15px;
 		justify-content: space-around;
 	}
 	.section-containers{
