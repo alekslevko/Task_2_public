@@ -44,8 +44,6 @@
 	display: flex;
 }
 .section-with-icons__icon:hover{
-	width: 69px;
-  	height: 69px;
 	background-color: #03a8cb;
 }
 .section-with-icons__title{

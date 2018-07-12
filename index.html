@@ -5,17 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sitename</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/header.css">
-    <link rel="stylesheet" type="text/css" href="css/menu.css">
-    <link rel="stylesheet" type="text/css" href="css/fonts.css">
-    <link rel="stylesheet" type="text/css" href="css/banner.css">
-    <link rel="stylesheet" type="text/css" href="css/person_block.css">
-    <link rel="stylesheet" type="text/css" href="css/section.css">
-    <link rel="stylesheet" type="text/css" href="css/spoiler.css">
-    <link rel="stylesheet" type="text/css" href="css/articles.css">
-    <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/min.style.css">
 </head>
 <body>
     <div class="page">
@@ -25,14 +16,16 @@
             </div>  
             <div class="title header__title">sitename</div>
             <div class="add-text header__add-text">lorem ipsum dolor sit amet vivamus</div>             
-            <nav>
-                <ul class="nav"> 
-                    <li class="nav__button"><a class="button__text button__text-nav" href="#">home</a></li>  
-                    <li class="nav__button"><a class="button__text button__text-nav" href="#">about</a></li>   
-                    <li class="nav__button"><a class="button__text button__text-nav" href="#">services</a></li>   
-                    <li class="nav__button"><a class="button__text button__text-nav" href="#">solutions</a></li>   
-                    <li class="nav__button"><a class="button__text button__text-nav" href="#">portfolio</a></li>   
-                    <li class="nav__button"><a class="button__text button__text-nav" href="#">contact</a></li>
+            <nav class="navigation">
+            	<label for="show-menu" class="title show-menu">Menu</label>
+            	<input type="checkbox" class="check-menu" id="show-menu" role="button">
+                <ul class="menu"> 
+                    <li class="menu__button"><a class="button__text button__text-menu" href="#">home</a></li>  
+                    <li class="menu__button"><a class="button__text button__text-menu" href="#">about</a></li>   
+                    <li class="menu__button"><a class="button__text button__text-menu" href="#">services</a></li>   
+                    <li class="menu__button"><a class="button__text button__text-menu" href="#">solutions</a></li>   
+                    <li class="menu__button"><a class="button__text button__text-menu" href="#">portfolio</a></li>   
+                    <li class="menu__button"><a class="button__text button__text-menu" href="#">contact</a></li>
                 </ul>   
             </nav>
         </header>
